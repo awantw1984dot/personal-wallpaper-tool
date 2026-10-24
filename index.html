@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Wallpaper Tool</title>
+<meta name="description" content="Personal Wallpaper Tool — a private personal project using the Pinterest API and Apple Shortcuts to set iPhone wallpapers.">
+<style>
+  :root { --bg:#fafaf9; --fg:#1c1917; --muted:#57534e; --line:#e7e5e4; --accent:#b91c1c; --card:#ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141210; --fg:#f5f5f4; --muted:#a8a29e; --line:#2e2a27; --accent:#f87171; --card:#1c1917; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  h1 { font-size: 2rem; line-height:1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p, li { color: var(--fg); }
+  .lead { color: var(--muted); margin: 0; }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .notice { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-top: 12px; }
+  footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 16px; font-size: .9rem; color: var(--muted); display:flex; gap:16px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Personal Wallpaper Tool</h1>
+    <p class="lead">Personal Wallpaper Tool is a private personal project created for testing and learning purposes.</p>
+  </header>
+
+  <p>The application is designed to connect to my own Pinterest account, read selected Pinterest boards, retrieve image information from Pins, and use those images as wallpapers on my personal iPhone through Apple Shortcuts.</p>
+
+  <h2>Purpose</h2>
+  <p>The main purpose of this project is to explore and test:</p>
+  <ul>
+    <li>Pinterest API integration</li>
+    <li>Reading my own Pinterest boards and Pins</li>
+    <li>Retrieving image URLs from authorized Pinterest content</li>
+    <li>Apple Shortcuts automation</li>
+    <li>Automatic wallpaper selection and updating on my personal iPhone</li>
+  </ul>
+
+  <h2>Personal Use Only</h2>
+  <div class="notice">
+    <p>Personal Wallpaper Tool is not a commercial product, public service, wallpaper application, or content distribution platform.</p>
+    <p>It is intended only for my own personal use and development testing.</p>
+    <p style="margin-bottom:0">The application does not provide Pinterest content to other users and does not resell, redistribute, or commercially exploit Pinterest data.</p>
+  </div>
+
+  <h2>Pinterest Access</h2>
+  <p>The application only accesses Pinterest data that has been authorized by the Pinterest account owner through the permissions granted to the application.</p>
+  <p>Pinterest API data is used only to support the personal wallpaper automation workflow.</p>
+
+  <h2>Privacy</h2>
+  <p>Personal Wallpaper Tool does not sell or share personal information with third parties.</p>
+  <p>For more information, please review the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>For questions regarding this project or its privacy practices, please contact the project owner through the contact information associated with this application.</p>
+
+  <footer>
+    <span>&copy; 2026 Personal Wallpaper Tool</span>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
